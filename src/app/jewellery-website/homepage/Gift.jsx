@@ -147,7 +147,7 @@ export default function Gift() {
                             </span>
                         </p>
                         <a
-                            href="https://www.tanishq.co.in/gifting?lang=en_IN"
+
                             style={{
                                 display: "inline-flex",
                                 alignItems: "center",

@@ -8,7 +8,7 @@ const pillars = [
     title: "Wedding",
     desktopImg: "https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw770a9bca/homepage/tanishq-pillars/tw-nt-wedding-desktop.jpg",
     mobileImg: "https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd397003f/homepage/tanishq-pillars/tw-nt-wedding-mobile.jpg",
-    link: "https://www.tanishq.co.in/rivaah?lang=en_IN",
+
     aspect: "aspect-[4/3] md:aspect-[4/5]"
   },
   {
@@ -16,7 +16,7 @@ const pillars = [
     title: "Gold",
     desktopImg: "https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw60988e8b/homepage/tanishq-pillars/tw-nt-gold-desktop.jpg",
     mobileImg: "https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwf78a044e/homepage/tanishq-pillars/tw-nt-gold-mobile.jpg",
-    link: "https://www.tanishq.co.in/gold?lang=en_IN",
+
     aspect: "aspect-[4/3] md:aspect-[5/4]"
   },
   {
@@ -24,7 +24,7 @@ const pillars = [
     title: "Diamond",
     desktopImg: "https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw1f6a4391/homepage/tanishq-pillars/fod-diamond-desktop.jpg",
     mobileImg: "https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9d0074cc/homepage/tanishq-pillars/fod-diamond-mobile.jpg",
-    link: "https://www.tanishq.co.in/diamonds?lang=en_IN",
+
     aspect: "aspect-[4/3] md:aspect-[5/4]"
   },
   {
@@ -32,7 +32,7 @@ const pillars = [
     title: "Dailywear",
     desktopImg: "https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw0f91b4a3/homepage/tanishq-pillars/ai-dailywear-desktop.jpg",
     mobileImg: "https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw940c9fca/homepage/tanishq-pillars/ai-dailywear-mobile.jpg",
-    link: "https://www.tanishq.co.in/dailywear?lang=en_IN",
+
     aspect: "aspect-[4/3] md:aspect-[4/5]"
   }
 ];
@@ -45,11 +45,11 @@ const TiltCard = ({ children, className }) => {
     const box = card.getBoundingClientRect();
     const x = e.clientX - box.left - box.width / 2;
     const y = e.clientY - box.top - box.height / 2;
-    
+
     // Smooth 3D tilt coordinates
     const tiltX = (y / (box.height / 2)) * -4;
     const tiltY = (x / (box.width / 2)) * 4;
-    
+
     setTilt({ x: tiltX, y: tiltY });
   };
 
@@ -76,16 +76,16 @@ export default function Occasion() {
   return (
     <section className="w-full bg-[#fdfaf7] py-16 px-6 md:px-12 lg:px-20 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
-        
+
         {/* HEADING SECTION */}
         <div className="text-center mb-12">
-          <h2 
+          <h2
             className="text-[36px] md:text-[46px] font-medium text-[#4a1f12] leading-tight"
             style={{ fontFamily: "serif" }}
           >
             ASM World
           </h2>
-          <p 
+          <p
             className="text-[#8c786c] text-[16px] md:text-[18px] tracking-[0.05em] mt-2 font-light"
             style={{ fontFamily: "serif" }}
           >
@@ -96,7 +96,7 @@ export default function Occasion() {
 
         {/* STAGGERED MASONRY GRID (DESKTOP) & STACK (MOBILE) */}
         <div className="flex flex-col md:flex-row gap-4 justify-center items-start">
-          
+
           {/* COLUMN 1: Wedding & Gold */}
           <div className="w-full md:w-1/2 flex flex-col gap-4">
             {/* Wedding Card (Tall) */}
@@ -113,7 +113,7 @@ export default function Occasion() {
                 </picture>
                 {/* Vignette Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex items-end justify-center p-6 md:p-8">
-                  <h3 
+                  <h3
                     className="text-white text-[24px] md:text-[32px] lg:text-[36px] font-medium tracking-wide translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
                     style={{ fontFamily: "serif" }}
                   >
@@ -137,7 +137,7 @@ export default function Occasion() {
                 </picture>
                 {/* Vignette Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex items-end justify-center p-6 md:p-8">
-                  <h3 
+                  <h3
                     className="text-white text-[24px] md:text-[32px] lg:text-[36px] font-medium tracking-wide translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
                     style={{ fontFamily: "serif" }}
                   >
@@ -164,7 +164,7 @@ export default function Occasion() {
                 </picture>
                 {/* Vignette Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex items-end justify-center p-6 md:p-8">
-                  <h3 
+                  <h3
                     className="text-white text-[24px] md:text-[32px] lg:text-[36px] font-medium tracking-wide translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
                     style={{ fontFamily: "serif" }}
                   >
@@ -188,7 +188,7 @@ export default function Occasion() {
                 </picture>
                 {/* Vignette Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex items-end justify-center p-6 md:p-8">
-                  <h3 
+                  <h3
                     className="text-white text-[24px] md:text-[32px] lg:text-[36px] font-medium tracking-wide translate-y-2 group-hover:translate-y-0 transition-transform duration-500"
                     style={{ fontFamily: "serif" }}
                   >
