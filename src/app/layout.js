@@ -20,6 +20,9 @@ export const metadata = {
     description: "Discover our breathtaking collection of handcrafted diamond, gold, and silver jewelry at ASM Jewellery.",
     type: "website",
   },
+  verification: {
+    google: "qu5g9w7UgG8Pk_9NYBTh7ARQcep8c6zirw7c4QrT1us",
+  },
 };
 
 export default function RootLayout({ children }) {
