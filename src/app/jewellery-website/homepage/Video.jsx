@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import { Play, Pause, Volume2, VolumeX, Maximize, Share2, ChevronLeft, ChevronRight } from "lucide-react";
 
 const videoItems = [
@@ -255,7 +256,7 @@ export default function Video() {
                             key={pIdx} 
                             className="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-xl p-1.5 pr-3 min-w-[140px] flex-shrink-0 border border-white/10"
                           >
-                            <img src={prod.image} alt={prod.name} className="w-9 h-9 object-cover rounded-lg" />
+                            <Image width={500} height={500} src={prod.image} alt={prod.name} className="w-9 h-9 object-cover rounded-lg" />
                             <div className="flex flex-col text-[10px] text-white">
                               <span className="font-semibold truncate max-w-[80px]">{prod.name}</span>
                               <span className="opacity-80">{prod.price}</span>
@@ -269,7 +270,7 @@ export default function Video() {
                 ) : (
                   // STATIC POSTER CARD (INCLINED / SIDE VIEW)
                   <div className="relative w-full h-full bg-black group">
-                    <img
+                    <Image width={500} height={500}
                       src={item.poster}
                       alt={item.title}
                       className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-[1000ms]"

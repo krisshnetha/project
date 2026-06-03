@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="relative w-full bg-[#300708] rounded-xl overflow-hidden mx-auto max-w-[1600px]">
 
         {/* Top Border Curve Overlay (Desktop only) */}
-        <img
+        <Image width={500} height={500}
           loading="lazy"
           className="absolute top-0 left-0 w-full h-[18px] md:h-[30px] hidden md:block z-0 pointer-events-none object-fill"
           src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw20a12c74/images/footer/top-bottom-border-curve.png"
@@ -15,7 +16,7 @@ export default function Footer() {
         />
 
         {/* Bottom Border Curve Overlay (Desktop only) */}
-        <img
+        <Image width={500} height={500}
           loading="lazy"
           className="absolute bottom-0 left-0 w-full h-[18px] md:h-[30px] hidden md:block rotate-180 z-0 pointer-events-none object-fill"
           src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw20a12c74/images/footer/top-bottom-border-curve.png"
@@ -134,7 +135,7 @@ export default function Footer() {
               <div className="hidden md:flex flex-col items-center w-full">
                 <p className="text-white mb-4 font-serif text-[17px]">Download the ASM Jewellery App Now</p>
                 <div className="flex justify-center mb-6">
-                  <img
+                  <Image width={500} height={500}
                     loading="lazy"
                     src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw24e8a742/images/footer/tanishq-app-QR-code-updated.svg"
                     alt="QR Code"
@@ -143,10 +144,10 @@ export default function Footer() {
                 </div>
                 <div className="flex gap-4">
                   <a href="https://play.google.com/store/apps/details?id=com.titancompany.tanishqapp" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                    <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwf3971307/images/footer/footer-playstore.svg" alt="Play Store" />
+                    <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwf3971307/images/footer/footer-playstore.svg" alt="Play Store" />
                   </a>
                   <a href="https://apps.apple.com/in/app/tanishq-a-tata-product/id1494086207" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                    <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwe9d356b9/images/footer/footer-ios.svg" alt="App Store" />
+                    <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwe9d356b9/images/footer/footer-ios.svg" alt="App Store" />
                   </a>
                 </div>
               </div>
@@ -200,13 +201,13 @@ export default function Footer() {
 
                     <div className="flex gap-5 mt-2">
                       <a href="https://api.whatsapp.com/send?phone=8147349242" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                        <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd94cc295/images/footer/footer-whatsapp.svg" alt="Whatsapp" className="w-[18px] h-[18px]" />
+                        <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd94cc295/images/footer/footer-whatsapp.svg" alt="Whatsapp" className="w-[18px] h-[18px]" />
                       </a>
                       <a href="mailto:ecomsupport@titan.co.in" className="hover:scale-110 transition-transform">
-                        <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwca9d87e8/images/footer/footer-writetous.svg" alt="Email" className="w-[20px] h-[16px] object-contain" />
+                        <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwca9d87e8/images/footer/footer-writetous.svg" alt="Email" className="w-[20px] h-[16px] object-contain" />
                       </a>
                       <a href="#" className="hover:scale-110 transition-transform">
-                        <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw69956d76/images/footer/footer-chatwithus.svg" alt="Chat" className="w-[18px] h-[18px]" />
+                        <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw69956d76/images/footer/footer-chatwithus.svg" alt="Chat" className="w-[18px] h-[18px]" />
                       </a>
                     </div>
                   </div>
@@ -216,10 +217,10 @@ export default function Footer() {
               {/* Mobile App Download (Mobile Only) */}
               <div className="flex md:hidden justify-center gap-4 mb-8">
                 <a href="https://play.google.com/store/apps/details?id=com.titancompany.tanishqapp" target="_blank" rel="noopener noreferrer">
-                  <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwf3971307/images/footer/footer-playstore.svg" alt="Play Store" />
+                  <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwf3971307/images/footer/footer-playstore.svg" alt="Play Store" />
                 </a>
                 <a href="https://apps.apple.com/in/app/tanishq-a-tata-product/id1494086207" target="_blank" rel="noopener noreferrer">
-                  <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwe9d356b9/images/footer/footer-ios.svg" alt="App Store" />
+                  <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwe9d356b9/images/footer/footer-ios.svg" alt="App Store" />
                 </a>
               </div>
 
@@ -229,16 +230,16 @@ export default function Footer() {
                   <span className="text-white font-serif text-[17px]">Social</span>
                   <div className="flex gap-4">
                     <a href="https://www.instagram.com/tanishqjewellery/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#4A2425] flex items-center justify-center hover:bg-[#60292B] transition-colors">
-                      <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwdd3964ee/images/footer/footer-instagram.svg" alt="Instagram" className="w-4 h-4" />
+                      <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwdd3964ee/images/footer/footer-instagram.svg" alt="Instagram" className="w-4 h-4" />
                     </a>
                     <a href="https://twitter.com/TanishqJewelry" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#4A2425] flex items-center justify-center hover:bg-[#60292B] transition-colors">
-                      <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw55bd73af/images/footer/footer-twitter.svg" alt="Twitter" className="w-4 h-4" />
+                      <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw55bd73af/images/footer/footer-twitter.svg" alt="Twitter" className="w-4 h-4" />
                     </a>
                     <a href="https://www.facebook.com/tanishq" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#4A2425] flex items-center justify-center hover:bg-[#60292B] transition-colors">
-                      <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd3c8497b/images/footer/footer-fb.svg" alt="Facebook" className="w-[10px] h-4" />
+                      <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd3c8497b/images/footer/footer-fb.svg" alt="Facebook" className="w-[10px] h-4" />
                     </a>
                     <a href="https://www.youtube.com/tanishq" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#4A2425] flex items-center justify-center hover:bg-[#60292B] transition-colors">
-                      <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwcf955502/images/footer/footer-youtube.svg" alt="Youtube" className="w-[18px] h-3" />
+                      <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwcf955502/images/footer/footer-youtube.svg" alt="Youtube" className="w-[18px] h-3" />
                     </a>
                   </div>
                 </div>
@@ -247,12 +248,12 @@ export default function Footer() {
               {/* Payments Divider */}
               <div className="border-t border-[#4A2425] pt-6 mb-6">
                 <div className="flex flex-wrap gap-4 items-center">
-                  <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw7b8761e0/images/footer/footer-visa.svg" alt="Visa" className="h-4" />
-                  <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw567d438d/images/footer/footer-mastercard.svg" alt="Mastercard" className="h-[22px]" />
-                  <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwc6c7f35b/images/footer/footer-maestro.svg" alt="Maestro" className="h-[22px]" />
-                  <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw5e3e7fa9/images/footer/footer-paypal.svg" alt="Paypal" className="h-[14px]" />
-                  <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac930b5f/images/footer/footer-dinnerclub.svg" alt="Diners Club" className="h-6" />
-                  <img loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw54f98ea5/images/footer/footer-americanexpress.svg" alt="Amex" className="h-[22px]" />
+                  <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw7b8761e0/images/footer/footer-visa.svg" alt="Visa" className="h-4" />
+                  <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw567d438d/images/footer/footer-mastercard.svg" alt="Mastercard" className="h-[22px]" />
+                  <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwc6c7f35b/images/footer/footer-maestro.svg" alt="Maestro" className="h-[22px]" />
+                  <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw5e3e7fa9/images/footer/footer-paypal.svg" alt="Paypal" className="h-[14px]" />
+                  <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac930b5f/images/footer/footer-dinnerclub.svg" alt="Diners Club" className="h-6" />
+                  <Image width={500} height={500} loading="lazy" src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw54f98ea5/images/footer/footer-americanexpress.svg" alt="Amex" className="h-[22px]" />
                 </div>
               </div>
 
